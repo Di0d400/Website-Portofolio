@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dioda</title>
+  <meta name="description" content="Portofolio Dioda, Front-End Developer & Photographer. Jelajahi karya, proyek, dan galeri fotografi Dioda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grad"></div>
+  <header>
+    <div class="container hero">
+      <div class="hero-img-wrap">
+        <img src="https://i.pinimg.com/474x/25/24/16/25241675a8d50609ab7aa1215a27b684.jpg" alt="Foto Dioda" class="profile-img">
+        <div class="profile-glass"></div>
+      </div>
+      <div>
+        <h1>Dioda</h1>
+        <p class="subtitle">Mahasiswa &amp; Penggemar Fotografi/Videografi</p>
+        <p class="desc">Saya seorang mahasiswa yang masih pemula dalam front-end development. Hobi saya fotografi dan videografi, serta memiliki keahlian dalam editing foto maupun video.</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/diobrgmn._?igsh=MWRwZnV1YXBpbGVrbQ==" target="_blank" title="Instagram">
+             <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" class="icon-social">
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+             <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" class="icon-social">
+            </a>
+        </div>
+        <nav>
+          <a href="#about">Tentang</a>
+          <a href="#projects">Proyek</a>
+          <a href="#gallery">Galeri</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+        <span class="burger">&#9776;</span>
+      </div>
+    </div>
+  </header>
+  
+<section id="about" class="reveal glass">
+  <h2>Tentang Saya</h2>
+  <p>Saya adalah seorang mahasiswa yang masih pemula dalam dunia front-end development. Selain belajar membuat website, saya juga memiliki hobi di bidang fotografi dan videografi. Saya senang mengabadikan momen dan membuat karya visual. Selain itu, saya juga memiliki keahlian dalam editing foto maupun video untuk menunjang hobi saya.</p>
+</section>
+
+  <section id="projects" class="reveal">
+    <h2>Proyek Front-End</h2>
+    <div class="project-list">
+      <div class="project-card glass">
+        <div class="project-icon project-1"></div>
+        <h3>Personal Blog</h3>
+        <p>Blog pribadi dengan React & Next.js, dark mode & markdown editor.</p>
+        <a href="#" class="btn-glass">Lihat Proyek</a>
+      </div>
+      <div class="project-card glass">
+        <div class="project-icon project-2"></div>
+        <h3>Portfolio Fotografi</h3>
+        <p>Website galeri foto dinamis, dibuat dengan Vue & Firebase.</p>
+        <a href="#" class="btn-glass">Lihat Proyek</a>
+      </div>
+      <div class="project-card glass">
+        <div class="project-icon project-3"></div>
+        <h3>Landing Page Startup</h3>
+        <p>Landing page responsif, animasi modern, dibuat dengan Tailwind CSS.</p>
+        <a href="#" class="btn-glass">Lihat Proyek</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="gallery" class="reveal glass">
+    <h2>Galeri Fotografi</h2>
+    <div class="gallery-grid">
+      <img src="https://blog.eigeradventure.com/wp-content/uploads/2024/03/gunung-di-indonesia-dengan-sunrise-terbaik-1.jpg" alt="Sunrise di pegunungan" class="gallery-thumb">
+      <img src="https://main.mobile.doss.co.id/storage/uploads/2023/07/photo-1628803184377-c5167a0cb6fd.webp" alt="Street Photography Malam" class="gallery-thumb">
+      <img src="https://st.depositphotos.com/57907330/54962/i/450/depositphotos_549625842-stock-photo-natural-light-portrait-beautiful-asian.jpg" alt="Portrait Natural Light" class="gallery-thumb">
+      <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/methode/2019/11/10/65426e78-fc61-11e9-acf9-cafedce87d15_image_hires_102047.jpg?itok=V_S3hAYM&v=1573352482" alt="Urban Exploration" class="gallery-thumb">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTK1W4-MGFkk7IwaS0C8xzC7fPcmubj2umlA&s" alt="Pantai Senja" class="gallery-thumb">
+      <img src="https://www.kelasgarasi.com/wp-content/uploads/2025/02/fotografi-human-interest-kelas-garasi.jpg" alt="Human Interest" class="gallery-thumb">
+    </div>
+    <div class="modal" id="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
+    </div>
+  </section>
+  
+  <section id="contact" class="reveal glass">
+    <h2>Kontak Saya</h2>
+    <form>
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="btn-glass">Kirim Pesan</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 <b>Dioda</b>. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
