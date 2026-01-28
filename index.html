@@ -1,164 +1,52 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dioda</title>
+  <title>Hi. I'm Dioda. A Designer.</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Cabinet Grotesk dari Fontshare dan Caveat dari Google Fonts -->
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="sticky-nav">
-    <nav>
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#work" class="nav-link">Work</a>
-      <a href="#contact" class="nav-link">Contact</a>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-content">
+        <a href="index.html" class="logo">Dioda</a>
+        <ul class="nav-links">
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
+
   <main>
-    <section id="home" class="hero-section">
-      <div class="hero-content">
-        <div>
-          <h1 class="hero-title">
-            Hi, I'm Dioda
-            <span class="star-decor">&#10022;</span>
-          </h1>
-          <p class="hero-desc">
-            Front-End Enthusiast & Visual Creator.<br>
-            Mahasiswa yang suka belajar front-end, fotografi, videografi, dan editing.
-          </p>
-          <div class="socials">
-            <a href="https://www.instagram.com/diobrgmn._?igsh=MWRwZnV1YXBpbGVrbQ==" target="blank"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" class="icon-social" alt="Instagram"></a>
-            <a href="https://github.com/Di0d400" target="blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" class="icon-social" alt="GitHub"></a>
-            <a href="https://www.tiktok.com/@minombreesido?is_from_webapp=1&sender_device=pc" target="blank"><img src="https://img.icons8.com/ios-filled/50/000000/tiktok--v1.png" class="icon-social" alt="TikTok"></a>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi. I'm Dioda.<br>A Designer.</h1>
+          <p>I'm passionate about crafting experiences that are engaging, accessible, and user-centric. Interested in design, development, and visual storytelling.</p>
+          <div class="hero-cta">
+            <a href="work.html" class="btn btn-primary">View My Work</a>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="about" class="page-section">
-      <div class="about-container">
-        <div class="about-photo-bg">
-          <img src="https://i.pinimg.com/474x/25/24/16/25241675a8d50609ab7aa1215a27b684.jpg" alt="Foto Dioda" class="about-avatar">
-        </div>
-        <div class="about-info">
-          <h2 class="about-title">I'm Dioda.</h2>
-          <p class="about-desc">
-            Saya mahasiswa yang sedang belajar front-end development.<br>
-            Saya suka fotografi, videografi, dan editing.<br>
-            Tertarik dengan visual, desain, dan teknologi.
-          </p>
-          <ul class="skills-list" id="skillsList">
-            <li data-skill="HTML, CSS, JavaScript" data-percent="85">
-              <span class="skill-icon" style="background:#e44d26"><img src="https://img.icons8.com/color/24/000000/html-5--v1.png" alt="HTML"></span>
-              <span class="skill-label">HTML, CSS, JavaScript</span>
-              <div class="skill-progress" style="display:none;">
-                <span class="skill-progress-name"></span>
-                <div class="progress-bar-bg">
-                  <div class="progress-bar-fill"></div>
-                </div>
-                <span class="skill-progress-percent"></span>
-              </div>
-            </li>
-            <li data-skill="Fotografi & Videografi" data-percent="70">
-              <span class="skill-icon" style="background:#222"><img src="https://img.icons8.com/ios-filled/24/ffffff/camera--v1.png" alt="Camera"></span>
-              <span class="skill-label">Fotografi & Videografi</span><div class="skill-progress" style="display:none;">
-                <span class="skill-progress-name"></span>
-                <div class="progress-bar-bg">
-                  <div class="progress-bar-fill"></div>
-                </div>
-                <span class="skill-progress-percent"></span>
-              </div>
-            </li>
-            <li data-skill="Editing Foto & Video" data-percent="80">
-              <span class="skill-icon" style="background:#6c63ff"><img src="https://img.icons8.com/ios-filled/24/ffffff/video-editing.png" alt="Editing"></span>
-              <span class="skill-label">Editing Foto & Video</span>
-              <div class="skill-progress" style="display:none;">
-                <span class="skill-progress-name"></span>
-                <div class="progress-bar-bg">
-                  <div class="progress-bar-fill"></div>
-                </div>
-                <span class="skill-progress-percent"></span>
-              </div>
-            </li>
-            <li data-skill="Desain Grafis Dasar" data-percent="65">
-              <span class="skill-icon" style="background:#ffbe76"><img src="https://img.icons8.com/ios-filled/24/ffffff/design.png" alt="Design"></span>
-              <span class="skill-label">Desain Grafis Dasar</span>
-              <div class="skill-progress" style="display:none;">
-                <span class="skill-progress-name"></span>
-                <div class="progress-bar-bg">
-                  <div class="progress-bar-fill"></div>
-                </div>
-                <span class="skill-progress-percent"></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="work" class="page-section">
-      <h2 class="work-title">Work</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <div class="project-icon" style="background:#e44d26;">
-            <img src="https://img.icons8.com/color/48/000000/source-code.png" alt="Portfolio">
-          </div>
-          <div class="project-info">
-            <h3 class="project-name">Personal Portfolio</h3>
-            <p class="project-desc">Website portofolio pribadi untuk menampilkan karya dan profil saya. Dibuat dengan HTML, CSS, dan JavaScript.</p>
-            <div class="project-links">
-              <a href="https://github.com/Di0d400/Website-Portofolio" target="_blank" class="project-link">GitHub</a>
-              <a href="https://di0d400.github.io/Website-Portofolio/" target="_blank" class="project-link">Live Site</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-icon" style="background:#6c63ff;">
-            <img src="https://img.icons8.com/ios-filled/48/ffffff/list.png" alt="Sistem Daftar">
-          </div>
-          <div class="project-info">
-            <h3 class="project-name">Sistem Daftar Sederhana</h3>
-            <p class="project-desc">Aplikasi web sederhana untuk pendaftaran user berbasis HTML, CSS, dan JavaScript.</p>
-            <div class="project-links">
-              <a href="https://github.com/Di0d400/tugas-kuliah" target="_blank" class="project-link">GitHub</a>
-              <a href="https://di0d400.github.io/tugas-kuliah/" target="_blank" class="project-link">Live Site</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-icon" style="background:#ffbe76;">
-            <img src="https://img.icons8.com/color/48/000000/company.png" alt="BNI Company">
-          </div>
-          <div class="project-info">
-            <h3 class="project-name">BNI Company Portfolio</h3>
-            <p class="project-desc">Website portofolio perusahaan (BNI) untuk memperjelas skill pemrograman web.</p>
-            <div class="project-links">
-              <a href="https://github.com/Di0d400/tugas-kuliah-part2" target="_blank" class="project-link">GitHub</a>
-              <a href="https://di0d400.github.io/tugas-kuliah-part2/" target="_blank" class="project-link">Live Site</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="page-section">
-      <h2 class="contact-title">Contact</h2>
-      <div class="chatbot-container" id="chatbotContainer">
-        <div class="chatbot-header">
-          <img src="https://img.icons8.com/color/48/robot-2.png" alt="Bimox" class="chatbot-avatar">
-          <div class="chatbot-meta">
-            <div class="chatbot-name">Bimox</div>
-            <div class="chatbot-status">berikan aku pertanyaan</div>
-          </div>
-        </div>
-        <div class="chat-window" id="chatWindow"></div>
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Dioda. All rights reserved.</p>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Dioda. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
